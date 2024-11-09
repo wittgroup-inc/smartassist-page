@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartAssist - Your Powerful Chatbot Assistant</title>
     <style>
-        /* Reset default margins and paddings */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Primary Colors */
         :root {
             --primary-color: #1A3CE2;
             --text-color: #333;
         }
 
-        /* General styling */
         body {
             font-family: Arial, sans-serif;
             color: var(--text-color);
@@ -26,14 +23,12 @@
             line-height: 1.6;
         }
 
-        /* Container */
         .container {
             max-width: 1200px;
             margin: auto;
             padding: 20px;
         }
 
-        /* Header styling */
         .header {
             text-align: center;
             padding: 20px 0;
@@ -56,7 +51,6 @@
             font-size: 1.2em;
         }
 
-        /* Introduction styling */
         .intro {
             text-align: center;
             padding: 40px 0;
@@ -67,7 +61,6 @@
             color: #555;
         }
 
-        /* Features section */
         .features {
             display: flex;
             flex-wrap: wrap;
@@ -96,7 +89,6 @@
             font-size: 1.3em;
         }
 
-        /* Download button */
         .download-button {
             display: inline-block;
             margin: 30px auto;
@@ -114,20 +106,28 @@
             background-color: #1230b0;
         }
 
-        /* Video section */
-        .video {
-            text-align: center;
+        .video-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin: 40px 0;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
-        iframe {
+        .video-section-content {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .video-section iframe {
+            flex: 1;
             width: 100%;
-            max-width: 800px;
-            height: 450px;
+            max-width: 500px;
+            height: 300px;
             border-radius: 10px;
         }
 
-        /* Footer styling */
         .footer {
             text-align: center;
             padding: 20px;
@@ -145,7 +145,6 @@
             text-decoration: underline;
         }
 
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .features {
                 flex-direction: column;
@@ -155,24 +154,29 @@
             .feature {
                 width: 80%;
             }
+
+            .video-section {
+                flex-direction: column;
+            }
+
+            .video-section iframe {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
     <header class="header">
         <img src="app_logo.png" alt="SmartAssist Logo">
         <h1>SmartAssist</h1>
         <p>Your Powerful Chatbot Assistant</p>
     </header>
 
-    <!-- Introduction Section -->
     <section class="intro container">
         <p>SmartAssist is a powerful chatbot designed to help you get the answers you need quickly and easily. Whether you have a question or need help with a task, SmartAssist is here to help. Available on Android Phones, Tablets, and Android TV.</p>
     </section>
 
-    <!-- Features Section -->
     <section class="features container">
         <div class="feature">
             <h3>Intuitive Design</h3>
@@ -200,18 +204,19 @@
         </div>
     </section>
 
-    <!-- Download Button -->
     <div class="container" style="text-align: center;">
         <a href="https://play.google.com/store/apps/details?id=com.gowittgroup.smartassist&hl=en-IN" class="download-button">Download on Google Play</a>
     </div>
 
-    <!-- Video Section -->
-    <section class="video container">
-        <h2>Watch Our Demo</h2>
+    <section class="video-section container">
+        <div class="video-section-content">
+            <h2>Why Choose SmartAssist?</h2>
+            <p>SmartAssist leverages advanced AI to bring you answers in an instant. Experience the ease of a conversational interface that feels like you're talking to a real person. Whether for study, work, or everyday inquiries, SmartAssist is built to make your experience seamless and productive.</p>
+            <p>Ready to see it in action? Check out the video on the right for a quick demo.</p>
+        </div>
         <iframe src="https://www.youtube.com/embed/4qI6o_9TQPE" title="SmartAssist Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
-    <!-- Footer Section -->
     <footer class="footer">
         <p>Developed by <strong>WITTGroup</strong> with love in India</p>
         <p>Contact us: <a href="mailto:wittgrp@gmail.com">wittgrp@gmail.com</a></p>
